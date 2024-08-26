@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -28,6 +28,8 @@
   color: #61dafb;
 }
 
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +37,167 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.slick-slide img {
+  margin: auto;
+}
+
+.tyyt img{
+  height: 200px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+/* .carousel-container {
+  width: 40%; 
+  margin: auto;
+} */
+
+.carousel-container {
+  margin-top: 20px;
+  width: 65%;
+  height: 300px;
+  /* margin: auto; */
+}
+
+
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  padding: 10px;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 300px; /* Set a maximum height */
+  object-fit: contain; /* Maintain aspect ratio and center */
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 600px;
+}
+
+.card-img-top-wrapper {
+  overflow: hidden;
+  height: 220px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+
+* {
+  padding: 0;
+  margin: o;
+  box-sizing: border-box;
+}
+
+.body {
+  box-sizing: border-box;
+}
+
+.header {
+  /* padding-top: 20px; */
+  background-color: black;
+  color: rgb(222, 213, 213);
+  top: 0;
+  width: 100%;
+}
+
+/* .nav img {
+  float: left;
+  margin-right: 20px;
+} */
+
+.nav ul {
+  list-style-type: none;
+  background-color: #282c34;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav li a {
+  padding: 20px;
+  margin-right: 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav li a:hover, .nav li a:active {
+  background-color: #282c34;
+  color: wheat;
+}
+
+/* Add this CSS to your stylesheet */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #007bff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.4em;
 }

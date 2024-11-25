@@ -54,10 +54,10 @@ function Carousel() {
 
   return (
     <div className='homepage container-fluid'>
-      <div className="carousel-container">
+      <div className="carousel-container" style={{ backgroundColor: 'black', padding: '20px', width: '100%' }} >
       <Slider {...settings}>
         {products.map((product) => (
-          <div key={product.id} className='tyyt'>
+          <div key={product.id} className='tyyt' >
             <img src={product.image} alt={product.title} />
           </div>
         ))}

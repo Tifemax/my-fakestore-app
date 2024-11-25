@@ -110,7 +110,7 @@ function NavBar() {
 
   const navData = [
     { name: 'Home', path: '/' },
-    { name: 'Wears', path: '/wears' },
+    // { name: 'Wears', path: '/wears' },
     { name: 'Electronics', path: '/electronics' },
     { name: 'Jewelry', path: '/jewelry' },
     { name: "Men's Clothing", path: '/mensclothing' },
@@ -146,8 +146,8 @@ function NavBar() {
                 </li>
               ))}
               <li>
-                <input type='text' placeholder='Search' style={{borderRadius: '40px', marginTop: '10px', marginLeft: '40px'}}/>
-                <button type='button' class='btn btn-dark' style={{borderRadius: '30px'}}>Search</button>
+                <input type='text' placeholder='Search' style={{borderRadius: '20px', marginTop: '10px', marginLeft: '40px', borderColor: 'white'}}/>
+                <button type='button' class='btn btn-primary' style={{borderRadius: '50px'}}>Search</button>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto"> {/* Align items to the right */}

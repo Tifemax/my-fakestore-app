@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import useFetch from "../components/useFetch";
 import { truncateSentence } from "../helpers/helper";
 import { FaDollarSign, FaStar } from "react-icons/fa";
-import Wo1 from '../images/wo1.jpeg'
-import Wo2 from '../images/wo2.jpeg'
-import Wo3 from '../images/wo3.jpeg'
-import Wo4 from '../images/wo4.jpeg'
+import { CartContext } from "./CartContext";
+import Me1 from '../images/me1.jpg'
+import Me2 from '../images/me2.jpeg'
+import Me3 from '../images/me3.jpeg'
+import Me4 from '../images/me4.jpeg'
 
-function WomansClothing() {
-  const [data, error] = useFetch("https://fakestoreapi.com/products/category/women's clothing"); // custom hook  "
+
+function menscloth() {
+  const [data, error] = useFetch("https://fakestoreapi.com/products/category/men's clothing"); // custom hook  women's clothing"
+  const { addToCart } = useContext(CartContext);
 
   
 
@@ -22,29 +25,25 @@ function WomansClothing() {
 
   return (
     <div>
-      <div className="container my-5">
-      <div className="row">
-        <div className="col-md-5 col-lg-5">
-          <img src={Wo4} style= {{width: '70%', height: '100%'}}/>
+      <div className="cointainer-fluid my-5">
+        <div className="row">
+          <div className="col-md-3 col-lg-3 ">
+            <img src={Me3}/>
+          </div>
+          <div className="col-md-3 col-lg-3 ">
+            <img src={Me4}/>
+          </div>
+          <div className="col-md-3 col-lg-3">
+            <img src={Me2}/>
+          </div>
+          
         </div>
-        <div className="col-md-4 col-lg-4 mx-auto">
-          <img src={Wo4}/>
-        </div>
-        <div className="col-md-4 col-lg-4">
-          <img src={Wo3}/>
-        </div>
-        <div className="col-md-4 col-lg-4 mx-auto">
-          <img src={Wo2}/>
-        </div>
-        
-
-      </div>
       </div>
       <div className="container my-5">
       <div className="row g-4">
         {data.map(
           ({ id, description, category, title, rating, image, price }) => (
-            <div className="col-md-4 col-lg-4" key={id} >
+            <div className="col-md-4 col-lg-3" key={id} >
               <div className="card h-100 d-flex flex-column" style={{height:'550px'}}>
                 <div className="card-img-top-wrapper" style={{height:'300px', width:'100%'}}>
                   <img
@@ -67,7 +66,8 @@ function WomansClothing() {
                     {rating.rate}
                     <FaStar color="yellow" />
                   </p>
-                  <button className="btn btn-primary mt-auto">
+                  {/* <button className="btn btn-primary mt-auto"> */}
+                  <button className="btn btn-primary mt-auto" onClick={() => addToCart({ id, title, price, image })}>
                     Add to Cart
                   </button>
                 </div>
@@ -82,4 +82,4 @@ function WomansClothing() {
   );
 }
 
-export default WomansClothing
+export default menscloth;

@@ -61,16 +61,16 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-lg-3" style={{marginTop: '20px'}}>
             <h1 style={{color: 'Yellow'}}><b>Categories :</b></h1>
-            <Link to="/electronics" style={{textDecoration: 'none', color: 'red'}}>
+            <Link to="/electronics" style={{textDecoration: 'none', color: 'yellow'}}>
               <p><b>Electronics</b></p>
             </Link>
-            <Link to="/jewelry" style={{textDecoration: 'none', color: 'red'}}>
+            <Link to="/jewelry" style={{textDecoration: 'none', color: 'yellow'}}>
               <p><b>Jewelry</b></p>
             </Link>
-            <Link to="/MensClothing" style={{textDecoration: 'none', color: 'red'}}>
+            <Link to="/MensClothing" style={{textDecoration: 'none', color: 'yellow'}}>
               <p><b>Men's Clothing</b></p>
             </Link>
-            <Link to="/womens-clothing" style={{textDecoration: 'none', color: 'red'}}>
+            <Link to="/womens-clothing" style={{textDecoration: 'none', color: 'yellow'}}>
               <p><b>Women's Clothing</b></p>
             </Link>
           </div>

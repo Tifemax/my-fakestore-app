@@ -145,10 +145,12 @@ function NavBar() {
                   </NavLink>
                 </li>
               ))}
-              <li>
-                <input type='text' placeholder='Search' style={{borderRadius: '20px', marginTop: '10px', marginLeft: '40px', borderColor: 'white'}}/>
+             <div>
+              <input type='text' placeholder='Search...' style={{borderRadius: '2%', marginLeft: '40px'}}/>
                 <button type='button' class='btn btn-primary' style={{borderRadius: '50px'}}>Search</button>
-              </li>
+             </div>
+                
+              
             </ul>
             <ul className="navbar-nav ms-auto"> {/* Align items to the right */}
               <li className="nav-item">
